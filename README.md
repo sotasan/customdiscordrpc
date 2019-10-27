@@ -3,7 +3,7 @@
 [discord-invite]: https://discord.gg/bF2GRHq
 [license]: https://github.com/PryosCode/CustomDiscordRPC/blob/master/LICENSE
 [discord-shield]: https://discordapp.com/api/guilds/350302354639290379/widget.png
-[license-shield]: https://img.shields.io/badge/License-Apache%202.0-lightgrey.svg
+[license-shield]: https://img.shields.io/github/license/PryosCode/CustomDiscordRPC?label=License
 [ ![version][] ][download]
 [ ![license-shield][] ][license]
 [ ![discord-shield][] ][discord-invite]
