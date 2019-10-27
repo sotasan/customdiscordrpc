@@ -51,11 +51,11 @@ If you want to expand this application, you will have to install:
     <version>2.8.6</version>
 </dependency>
 
-<!-- https://mvnrepository.com/artifact/club.minnced/discord-rpc-release -->
+<!-- https://mvnrepository.com/artifact/club.minnced/java-discord-rpc -->
 <dependency>
     <groupId>club.minnced</groupId>
-    <artifactId>discord-rpc-release</artifactId>
-    <version>v3.4.0</version>
+    <artifactId>java-discord-rpc</artifactId>
+    <version>2.0.1</version>
 </dependency>
 ```
 
