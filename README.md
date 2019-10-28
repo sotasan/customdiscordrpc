@@ -1,16 +1,12 @@
-[version]: https://img.shields.io/github/downloads/PryosCode/CustomDiscordRPC/total?label=Downloads
-[download]: https://github.com/PryosCode/CustomDiscordRPC/releases
-[discord-invite]: https://discord.gg/bF2GRHq
-[license]: https://github.com/PryosCode/CustomDiscordRPC/blob/master/LICENSE
-[discord-shield]: https://discordapp.com/api/guilds/350302354639290379/widget.png
-[license-shield]: https://img.shields.io/github/license/PryosCode/CustomDiscordRPC?label=License
-[ ![version][] ][download]
-[ ![license-shield][] ][license]
-[ ![discord-shield][] ][discord-invite]
+<p align="center">
+    <a href="https://github.com/PryosCode/CustomDiscordRPC/releases"><img src="https://img.shields.io/github/downloads/PryosCode/CustomDiscordRPC/total?label=Downloads" alt="Downloads"></a>
+    <a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/LICENSE"><img src="https://discordapp.com/api/guilds/350302354639290379/widget.png" alt="License"></a>
+    <a href="https://discord.gg/bF2GRHq"><img src="https://discordapp.com/api/guilds/350302354639290379/widget.png" alt="Discord"></a>
+</p>
 
 # CustomDiscordRPC
 
-[<img align="right" src="images/banner.gif">](https://github.com/PryosCode/CustomDiscordRPC/releases)
+<a href="https://github.com/PryosCode/CustomDiscordRPC/releases"><img align="right" src="images/banner.gif"></a>
 
 Customisable Discord Rich Presence Client written in Java for Windows.
 
