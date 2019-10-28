@@ -59,6 +59,8 @@ public class Main {
             String content = scanner.next();
             scanner.close();
 
+            connection.disconnect();
+
             Gson gson = new Gson();
             JsonArray jsonArray = gson.fromJson(content, JsonArray.class);
             if(jsonArray.size() == 0)

@@ -17,27 +17,29 @@ public class FileUtils {
     }
 
     public static File getConfig() {
+        File config = new File(getFolder().getPath() + "/config.json");
+        if (!config.exists()) {
+            write(config, readLocalFile("assets/config.json"));
+        }
+        return config;
+    }
+
+    public static byte[] readLocalFile(String location) {
         try {
-            InputStream inputStream = Main.class.getClassLoader().getResourceAsStream("assets/config.json");
+            InputStream inputStream = Main.class.getClassLoader().getResourceAsStream(location);
             byte[] buffer = new byte[inputStream.available()];
             inputStream.read(buffer);
-
-            File config = new File(getFolder().getPath() + "/config.json");
-            if (!config.exists()) {
-                OutputStream outStream = new FileOutputStream(config);
-                outStream.write(buffer);
-                outStream.close();
-            }
-            return config;
+            inputStream.close();
+            return buffer;
         } catch (Exception e) {
             Main.errorPopup(e);
         }
         return null;
     }
 
-    public static String getConfigContent() {
+    public static String read(File file) {
         try {
-            Scanner scanner = new Scanner(FileUtils.getConfig());
+            Scanner scanner = new Scanner(file);
             String content = scanner.useDelimiter("\\A").next();
             scanner.close();
             return content;
@@ -45,6 +47,16 @@ public class FileUtils {
             Main.errorPopup(e);
         }
         return null;
+    }
+
+    public static void write(File file, byte[] buffer) {
+        try {
+            OutputStream outStream = new FileOutputStream(file);
+            outStream.write(buffer);
+            outStream.close();
+        } catch (Exception e) {
+            Main.errorPopup(e);
+        }
     }
 
 }

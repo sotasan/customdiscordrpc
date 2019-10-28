@@ -4,6 +4,7 @@ import net.pryoscode.CustomDiscordRPC.Main;
 import net.pryoscode.CustomDiscordRPC.menu.ItemManager;
 import javax.imageio.ImageIO;
 import java.awt.*;
+import java.io.InputStream;
 
 public class TrayUtils {
 
@@ -13,7 +14,9 @@ public class TrayUtils {
     public TrayUtils() {
         try {
             systemTray = SystemTray.getSystemTray();
-            Image image = ImageIO.read(Main.class.getClassLoader().getResourceAsStream("assets/discord.png"));
+            InputStream inputStream = Main.class.getClassLoader().getResourceAsStream("assets/discord.png");
+            Image image = ImageIO.read(inputStream);
+            inputStream.close();
             trayIcon = new TrayIcon(image, "CustomDiscordRPC " + Main.VERSION);
             systemTray.add(trayIcon);
             trayIcon.setImageAutoSize(true);

@@ -25,29 +25,33 @@ public class Discord {
         timer.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
-                Gson gson = new Gson();
-                JsonObject jsonObject = gson.fromJson(FileUtils.getConfigContent(), JsonObject.class);
+                try {
+                    Gson gson = new Gson();
+                    JsonObject jsonObject = gson.fromJson(FileUtils.read(FileUtils.getConfig()), JsonObject.class);
 
-                if(!clientID.equals(jsonObject.get("ClientID").getAsString())) {
-                    clientID = jsonObject.get("ClientID").getAsString();
-                    lib.Discord_Shutdown();
-                    lib.Discord_Initialize(clientID, handlers, true, "");
+                    if (!clientID.equals(jsonObject.get("ClientID").getAsString())) {
+                        clientID = jsonObject.get("ClientID").getAsString();
+                        lib.Discord_Shutdown();
+                        lib.Discord_Initialize(clientID, handlers, true, "");
+                    }
+
+                    DiscordRichPresence richPresence = new DiscordRichPresence();
+                    richPresence.startTimestamp = startTimestamp;
+
+                    richPresence.state = jsonObject.get("State").getAsString();
+                    richPresence.details = jsonObject.get("Details").getAsString();
+
+                    JsonObject images = jsonObject.get("Images").getAsJsonObject();
+                    richPresence.largeImageKey = images.get("LargeImage").getAsString();
+                    richPresence.largeImageText = images.get("LargeImageTooltip").getAsString();
+                    richPresence.smallImageKey = images.get("SmallImage").getAsString();
+                    richPresence.smallImageText = images.get("SmallImageTooltip").getAsString();
+
+                    lib.Discord_UpdatePresence(richPresence);
+                    lib.Discord_RunCallbacks();
+                } catch (Exception e) {
+                    Main.errorPopup(e);
                 }
-
-                DiscordRichPresence richPresence = new DiscordRichPresence();
-                richPresence.startTimestamp = startTimestamp;
-
-                richPresence.state = jsonObject.get("State").getAsString();
-                richPresence.details = jsonObject.get("Details").getAsString();
-
-                JsonObject images = jsonObject.get("Images").getAsJsonObject();
-                richPresence.largeImageKey = images.get("LargeImage").getAsString();
-                richPresence.largeImageText = images.get("LargeImageTooltip").getAsString();
-                richPresence.smallImageKey = images.get("SmallImage").getAsString();
-                richPresence.smallImageText = images.get("SmallImageTooltip").getAsString();
-
-                lib.Discord_UpdatePresence(richPresence);
-                lib.Discord_RunCallbacks();
             }
         }, 0, 2000);
     }
