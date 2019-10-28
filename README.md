@@ -26,11 +26,11 @@ The latest version can be found on [GitHub](https://github.com/PryosCode/CustomD
 
 ### Setup
 
-If you want to use the setup version you can [download](https://github.com/PryosCode/CustomDiscordRPC/releases) and directly start the `Setup-CustomDiscordRPC.exe`. It will install it's own JRE in the root directory.
+If you want to use the setup version you can [download](https://github.com/PryosCode/CustomDiscordRPC/releases) and directly start the `Setup-CustomDiscordRPC.exe`. It will install it's own Java SE Runtime Environment in the root directory.
 
 ### Portable
 
-If you want to use the portable version you can [download](https://github.com/PryosCode/CustomDiscordRPC/releases) it, but you will have to extract the `Portable-CustomDiscordRPC.zip`. In the file is the executable and the JRE included.
+If you want to use the portable version you can [download](https://github.com/PryosCode/CustomDiscordRPC/releases) it, but you will have to extract the `Portable-CustomDiscordRPC.zip`. In the file is the executable and the Java SE Runtime Environment included.
 
 ## Configuration
 
