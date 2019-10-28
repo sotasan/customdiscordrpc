@@ -10,6 +10,12 @@
 
 Customisable Discord Rich Presence Client written in Java for Windows.
 
+1. [Getting Started](#getting-started)
+2. [Installation](#installation)
+3. [Configuration](#configuration)
+4. [Dependencies](#dependencies)
+5. [License](#license)
+
 ## Getting Started
 
 You have to create your own [Discord Application](https://discordapp.com/developers/applications) and you can upload some assets if you want to use them later.
@@ -18,9 +24,20 @@ To run this application you will have to have [Java](https://www.java.com/) inst
 ## Installation
 
 The latest version can be found on [GitHub](https://github.com/PryosCode/CustomDiscordRPC/releases).
-You can start the `CustomDiscordRPC.exe` or you can install the `Setup-CustomDiscordRPC.exe`.
+
+### Portable
+
+If you want to use the portable version you can [download](https://github.com/PryosCode/CustomDiscordRPC/releases) it, but if you want to start the `Portable-CustomDiscordRPC.jar` you will have to have [Java](https://www.java.com/) installed.
+
+### Setup
+
+If you want to use the setup version you can [download](https://github.com/PryosCode/CustomDiscordRPC/releases) and directly start the `Setup-CustomDiscordRPC.exe`. It will install it's own JRE in the root directory.
+
+## Configuration
+
 If the application is running you can find a system tray and if you click on it you will find an option called `Config`.
 This will open the `config.json` and you will have to set the `ClientID`.
+Otherwise you can press `Windows` + `R` and enter the command `%appdata%\PryosCode\CustomDiscordRPC\config.json`.
 In this file you can configure every perspective of this application.
 
 ## Dependencies
