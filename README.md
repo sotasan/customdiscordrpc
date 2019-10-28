@@ -6,7 +6,7 @@
 
 # CustomDiscordRPC
 
-<a href="https://github.com/PryosCode/CustomDiscordRPC/releases"><img align="right" src="https://github.com/PryosCode/CustomDiscordRPC/raw/master/images/banner.gif"></a>
+<a href="https://github.com/PryosCode/CustomDiscordRPC/releases"><img align="right" src="images/banner.gif"></a>
 
 Customisable Discord Rich Presence Client written in Java for Windows.
 
