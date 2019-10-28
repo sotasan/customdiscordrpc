@@ -10,7 +10,7 @@
 
 # CustomDiscordRPC
 
-<img align="right" src="images/banner.gif">
+[<img align="right" src="images/banner.gif">](https://github.com/PryosCode/CustomDiscordRPC/releases)
 
 Customisable Discord Rich Presence Client written in Java for Windows.
 
@@ -33,7 +33,7 @@ If you want to expand this application, you will have to install:
 
 * [JTattoo](http://www.jtattoo.net/)
 * [Gson](https://github.com/google/gson)
-* [Discord-RPC](https://github.com/MinnDevelopment/java-discord-rpc)
+* [Java-Discord-RPC](https://github.com/MinnDevelopment/java-discord-rpc)
 
 ### Maven
 
