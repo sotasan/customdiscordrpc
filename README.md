@@ -30,7 +30,7 @@ If you want to use the setup version you can [download](https://github.com/Pryos
 
 ### Portable
 
-If you want to use the portable version you can [download](https://github.com/PryosCode/CustomDiscordRPC/releases) it, but you will have to extract the `Portable-CustomDiscordRPC.zip`. In the file is the excutable and the JRE included.
+If you want to use the portable version you can [download](https://github.com/PryosCode/CustomDiscordRPC/releases) it, but you will have to extract the `Portable-CustomDiscordRPC.zip`. In the file is the executable and the JRE included.
 
 ## Configuration
 
