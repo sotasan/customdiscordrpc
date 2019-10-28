@@ -10,8 +10,9 @@
 
 # CustomDiscordRPC
 
-Customisable Discord Rich Presence Client written in Java for Windows.
+<img align="right" src="images/banner.gif">
 
+Customisable Discord Rich Presence Client written in Java for Windows.
 
 ## Getting Started
 
