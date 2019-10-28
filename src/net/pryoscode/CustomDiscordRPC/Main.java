@@ -15,7 +15,7 @@ import java.util.Scanner;
 public class Main {
 
     public static TrayUtils trayUtils;
-    public static final String VERSION = "v1.0";
+    public static final String VERSION = "v1.1";
 
     public static void main(String args[]) {
         try {
