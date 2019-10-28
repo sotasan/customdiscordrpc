@@ -24,13 +24,13 @@ You have to create your own [Discord Application](https://discordapp.com/develop
 
 The latest version can be found on [GitHub](https://github.com/PryosCode/CustomDiscordRPC/releases).
 
-### Portable
-
-If you want to use the portable version you can [download](https://github.com/PryosCode/CustomDiscordRPC/releases) it, but if you want to start the `Portable-CustomDiscordRPC.jar` you will have to have [Java](https://www.java.com/) installed.
-
 ### Setup
 
 If you want to use the setup version you can [download](https://github.com/PryosCode/CustomDiscordRPC/releases) and directly start the `Setup-CustomDiscordRPC.exe`. It will install it's own JRE in the root directory.
+
+### Portable
+
+If you want to use the portable version you can [download](https://github.com/PryosCode/CustomDiscordRPC/releases) it, but you will have to extract the `Portable-CustomDiscordRPC.zip`. In the file is the excutable and the JRE included.
 
 ## Configuration
 
