@@ -18,7 +18,7 @@ public class Discord {
     public Discord() {
         DiscordRPC lib = DiscordRPC.INSTANCE;
         DiscordEventHandlers handlers = new DiscordEventHandlers();
-        handlers.ready = (user) -> Main.trayUtils.getTrayIcon().displayMessage("CustomDiscordRPC " + Main.VERSION, "Successful started Discord Rich Presence Client", TrayIcon.MessageType.INFO);
+        handlers.ready = (user) -> Main.trayUtils.getTrayIcon().displayMessage("CustomDiscordRPC " + Main.VERSION, "Successful started the RPC Client.", TrayIcon.MessageType.INFO);
         startTimestamp = System.currentTimeMillis() / 1000;
 
         Timer timer = new Timer();
