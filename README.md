@@ -18,8 +18,7 @@ Customisable Discord Rich Presence Client written in Java for Windows.
 
 ## Getting Started
 
-You have to create your own [Discord Application](https://discordapp.com/developers/applications) and you can upload some assets if you want to use them later.
-To run this application you will have to have [Java](https://www.java.com/) installed.
+You have to create your own [Discord Application](https://discordapp.com/developers/applications) and you can upload some assets if you want to use them later. The recommended size for a image is `1024x1024`, but the minimum size is `512x512`.
 
 ## Installation
 
