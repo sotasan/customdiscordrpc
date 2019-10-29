@@ -36,7 +36,7 @@ If you want to use the portable version you can [download](https://github.com/Pr
 
 If the application is running you can find a system tray and if you click on it you will find an option called `Config`.
 This will open the `config.json` and you will have to set the `ClientID`.
-Otherwise you can press `Windows` + `R` and enter the command `%appdata%\PryosCode\CustomDiscordRPC\config.json`.
+Otherwise you can press `Windows` + `R` and enter the command `notepad.exe %appdata%\PryosCode\CustomDiscordRPC\config.json`.
 In this file you can configure every perspective of this application.
 
 ## Dependencies
