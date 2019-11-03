@@ -74,4 +74,4 @@ If you want to expand this application, you will have to install:
 
 ## License
 
-This project is licensed under the Apache License 2.0 - see the [LICENSE.md](https://github.com/PryosCode/CustomDiscordRPC/blob/master/LICENSE) file for details.
+This project is licensed under the GNU Affero General Public License v3.0 - see the [LICENSE.md](https://github.com/PryosCode/CustomDiscordRPC/blob/master/LICENSE) file for details.
