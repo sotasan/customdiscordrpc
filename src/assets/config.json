@@ -1,10 +1,10 @@
 {
   "ClientID": "638034914398175233",
-  "Details": "1. Line",
-  "State": "2. Line",
+  "Details": "Line 1",
+  "State": "Line 2",
   "Images": {
     "LargeImage": "discord-logo",
-    "LargeImageTooltip": "Discord Rich Presence",
+    "LargeImageTooltip": "CustomDiscordRPC",
     "SmallImage": "pryoscode-logo",
     "SmallImageTooltip": "by PryosCode"
   }
