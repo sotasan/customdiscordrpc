@@ -3,9 +3,9 @@
   "Details": "Line 1",
   "State": "Line 2",
   "Images": {
-    "LargeImage": "discord-logo",
+    "LargeImage": "discord-blue",
     "LargeImageTooltip": "CustomDiscordRPC",
-    "SmallImage": "other-image",
+    "SmallImage": "discord-white",
     "SmallImageTooltip": "by PryosCode"
   }
 }
