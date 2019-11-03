@@ -5,7 +5,7 @@
   "Images": {
     "LargeImage": "discord-logo",
     "LargeImageTooltip": "CustomDiscordRPC",
-    "SmallImage": "pryoscode-logo",
+    "SmallImage": "other-image",
     "SmallImageTooltip": "by PryosCode"
   }
 }
