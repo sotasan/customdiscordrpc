@@ -74,7 +74,6 @@ If you want to expand this application, you will have to install:
 
 ## License
 
-CustomDiscordRPC - Customisable Discord Rich Presence Client written in Java for Windows.
 Copyright (C) 2019 PryosCode
 
 This program is free software: you can redistribute it and/or modify
