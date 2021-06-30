@@ -6,19 +6,18 @@
 
 # CustomDiscordRPC
 
-<a href="https://github.com/PryosCode/CustomDiscordRPC/releases"><img align="right" src="images/preview.gif"></a>
+<a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/img/preview.gif"><img align="right" src="https://github.com/PryosCode/CustomDiscordRPC/raw/master/img/preview.gif"></a>
 
-Customisable Discord Rich Presence Client written in Java for Windows.
+Customisable Discord Rich Presence Client written in Kotlin for Windows.
 
 1. [Getting Started](#getting-started)
 2. [Installation](#installation)
 3. [Configuration](#configuration)
-4. [Dependencies](#dependencies)
-5. [License](#license)
+4. [License](#license)
 
 ## Getting Started
 
-You have to create your own [Discord Application](https://discordapp.com/developers/applications) and you can upload some assets if you want to use them later. The recommended size for a image is `1024x1024`, but the minimum size is `512x512`.
+You have to create your own [Discord Application](https://discord.com/developers/applications) and you can upload some assets if you want to use them later. The recommended size for a image is `1024x1024`, but the minimum size is `512x512`.
 
 ## Installation
 
@@ -26,11 +25,11 @@ The latest version can be found on [GitHub](https://github.com/PryosCode/CustomD
 
 ### Setup
 
-If you want to use the setup version you can [download](https://github.com/PryosCode/CustomDiscordRPC/releases) and directly start the `Setup-CustomDiscordRPC.exe`. It will install it's own Java SE Runtime Environment in the root directory.
+If you want to use the setup version you can [download](https://github.com/PryosCode/CustomDiscordRPC/releases) and directly start the `Setup-CustomDiscordRPC.exe`.
 
 ### Portable
 
-If you want to use the portable version you can [download](https://github.com/PryosCode/CustomDiscordRPC/releases) it, but you will have to extract the `Portable-CustomDiscordRPC.zip`. In the file is the executable and the Java SE Runtime Environment included.
+If you want to use the binary version you can [download](https://github.com/PryosCode/CustomDiscordRPC/releases) it and execute the `CustomDiscordRPC.exe`.
 
 ## Configuration
 
@@ -39,52 +38,6 @@ This will open the `config.json` and you will have to set the `ClientID`.
 Otherwise you can press `Windows` + `R` and enter the command `notepad.exe %appdata%\PryosCode\CustomDiscordRPC\config.json`.
 In this file you can configure every perspective of this application.
 
-## Dependencies
-
-If you want to expand this application, you will have to install:
-
-* [JTattoo](http://www.jtattoo.net/)
-* [Gson](https://github.com/google/gson)
-* [Java-Discord-RPC](https://github.com/MinnDevelopment/java-discord-rpc)
-
-### Maven
-
-```xml
-<!-- https://mvnrepository.com/artifact/com.jtattoo/JTattoo -->
-<dependency>
-    <groupId>com.jtattoo</groupId>
-    <artifactId>JTattoo</artifactId>
-    <version>1.6.12</version>
-</dependency>
-
-<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
-<dependency>
-    <groupId>com.google.code.gson</groupId>
-    <artifactId>gson</artifactId>
-    <version>2.8.6</version>
-</dependency>
-
-<!-- https://mvnrepository.com/artifact/club.minnced/java-discord-rpc -->
-<dependency>
-    <groupId>club.minnced</groupId>
-    <artifactId>java-discord-rpc</artifactId>
-    <version>2.0.1</version>
-</dependency>
-```
-
 ## License
 
-Copyright (C) 2019 PryosCode
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU Affero General Public License as published
-by the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU Affero General Public License for more details.
-
-You should have received a copy of the GNU Affero General Public License
-along with this program.  If not, see <https://www.gnu.org/licenses/>.
+[Apache License 2.0](https://github.com/PryosCode/CustomDiscordRPC/blob/master/LICENSE)

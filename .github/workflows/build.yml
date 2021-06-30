@@ -1,0 +1,37 @@
+name: Build
+
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+    branches:
+    - master
+
+jobs:
+  build:
+    name: Build
+    runs-on: windows-latest
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Setup
+      uses: actions/setup-java@v1
+      with:
+        java-version: 11
+
+    - name: Gradle
+      run: |
+        gradle nativeBinaries
+        echo GRADLE_VERSION=$(gradle -q properties | grep 'version:' | cut -d ' ' -f 2) >> $GITHUB_ENV
+
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: build/bin/native/releaseExecutable/CustomDiscordRPC
+        tag_name: v${{ env.GRADLE_VERSION }}
+        draft: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
