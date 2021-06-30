@@ -25,7 +25,7 @@ The latest version can be found on [GitHub](https://github.com/PryosCode/CustomD
 
 ### Setup
 
-If you want to use the setup version you can [download](https://github.com/PryosCode/CustomDiscordRPC/releases) and directly start the `Setup-CustomDiscordRPC.exe`.
+If you want to use the setup version you can [download](https://github.com/PryosCode/CustomDiscordRPC/releases) and directly start the `CustomDiscordRPC-Setup.exe`.
 
 ### Portable
 
