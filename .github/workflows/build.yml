@@ -24,13 +24,13 @@ jobs:
 
     - name: Gradle
       run: |
-        gradle nativeBinaries
+        gradle fatJar
         echo GRADLE_VERSION=$(gradle -q properties | grep 'version:' | cut -d ' ' -f 2) >> $GITHUB_ENV
 
     - name: Release
       uses: softprops/action-gh-release@v1
       with:
-        files: build/bin/native/releaseExecutable/CustomDiscordRPC
+        files: build/libs
         tag_name: v${{ env.GRADLE_VERSION }}
         draft: true
       env:
