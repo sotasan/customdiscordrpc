@@ -18,7 +18,9 @@ class Discord : DiscordEventHandlers.OnReady {
         presence.details = "Line 1"
         presence.state = "Line 2"
         presence.largeImageKey = "discord-color"
+        presence.largeImageText = "CustomDiscordRPC"
         presence.smallImageKey = "discord-white"
+        presence.smallImageText = "by PryosCode"
         lib.Discord_UpdatePresence(presence)
         Thread {
             while (!Thread.currentThread().isInterrupted()) {

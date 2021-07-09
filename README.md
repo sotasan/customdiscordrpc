@@ -1,11 +1,12 @@
 <p align="center">
     <a href="https://github.com/PryosCode/CustomDiscordRPC/releases"><img src="https://img.shields.io/github/downloads/PryosCode/CustomDiscordRPC/total?label=Downloads" alt="Downloads"></a>
+    <a href="https://github.com/PryosCode/CustomDiscordRPC/actions/workflows/build.yml"><img src="https://github.com/PryosCode/CustomDiscordRPC/actions/workflows/build.yml/badge.svg" alt="Build"></a>
     <a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/LICENSE"><img src="https://img.shields.io/github/license/PryosCode/CustomDiscordRPC?label=License" alt="License"></a>
     <a href="https://discord.gg/bF2GRHq"><img src="https://discordapp.com/api/guilds/350302354639290379/widget.png" alt="Discord"></a>
 </p>
 
 
-<h1><img width="50px" height="auto" alt="Logo" src="https://github.com/PryosCode/CustomDiscordRPC/raw/master/img/logo.png"> CustomDiscordRPC</h1>
+<h1><a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/img/logo.png"><img width="30px" height="auto" alt="Logo" src="https://github.com/PryosCode/CustomDiscordRPC/raw/master/img/logo.png"></a> CustomDiscordRPC</h1>
 
 Customisable Discord Rich Presence Client in a JVM for Windows.
 
@@ -32,8 +33,19 @@ In this file you can configure every perspective of this application.
 
 ### Example
 
-[![Example](https://github.com/PryosCode/CustomDiscordRPC/raw/master/img/preview.gif)](https://github.com/PryosCode/CustomDiscordRPC/blob/master/src/main/resources/config.yml)
+<a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/src/main/resources/config.yml"><img align="right" alt="Example" src="https://github.com/PryosCode/CustomDiscordRPC/raw/master/img/preview.gif"></a>
+
+```yaml
+ClientID: 638034914398175233
+Details: Line 1
+State: Line 2
+Images:
+  LargeImage: discord-blue
+  LargeImageTooltip: CustomDiscordRPC
+  SmallImage: discord-white
+  SmallImageTooltip: by PryosCode
+```
 
 ## License
 
-[Apache License 2.0](https://github.com/PryosCode/Cust
+[Apache License 2.0](https://github.com/PryosCode/CustomDiscordRPC/blob/master/LICENSE)
