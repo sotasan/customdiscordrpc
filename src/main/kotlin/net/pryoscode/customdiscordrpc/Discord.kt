@@ -20,7 +20,7 @@ class Discord : DiscordEventHandlers.OnReady {
         presence.largeImageKey = "discord-color"
         presence.largeImageText = "CustomDiscordRPC"
         presence.smallImageKey = "discord-white"
-        presence.smallImageText = "by PryosCode"
+        presence.smallImageText = "PryosCode"
         lib.Discord_UpdatePresence(presence)
         Thread {
             while (!Thread.currentThread().isInterrupted()) {
