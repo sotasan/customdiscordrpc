@@ -33,7 +33,7 @@ In this file you can configure every perspective of this application.
 
 ### Example
 
-<a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/src/main/resources/config.yml"><img align="right" alt="Example" src="https://github.com/PryosCode/CustomDiscordRPC/raw/master/img/preview.gif"></a>
+<a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/src/main/resources/config.yml"><img align="right" alt="Example" src="https://github.com/PryosCode/CustomDiscordRPC/raw/master/img/example.png"></a>
 
 ```yaml
 ClientID: 638034914398175233
