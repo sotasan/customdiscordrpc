@@ -15,19 +15,19 @@ class Discord : DiscordEventHandlers.OnReady {
         lib.Discord_Initialize("638034914398175233", handlers, true, "")
         val presence = DiscordRichPresence()
         presence.startTimestamp = System.currentTimeMillis() / 1000
-        presence.details = "Line 1"
-        presence.state = "Line 2"
-        presence.largeImageKey = "discord-color"
-        presence.largeImageText = "CustomDiscordRPC"
-        presence.smallImageKey = "discord-white"
-        presence.smallImageText = "PryosCode"
+        presence.details = config.details()
+        presence.state = config.state()
+        presence.largeImageKey = config.largeImage()
+        presence.largeImageText = config.largeImageTooltip()
+        presence.smallImageKey = config.smallImage()
+        presence.smallImageText = config.smallImageTooltip()
         lib.Discord_UpdatePresence(presence)
         Thread {
             while (!Thread.currentThread().isInterrupted()) {
                 lib.Discord_RunCallbacks()
                 Thread.sleep(2000)
             }
-        }.start();
+        }.start()
     }
 
     override fun accept(user: DiscordUser) {
