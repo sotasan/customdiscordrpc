@@ -12,24 +12,23 @@ Customisable Discord Rich Presence Client in a JVM for Windows.
 
 ## Getting Started
 
-You have to create your own [Discord Application](https://discord.com/developers/applications) and you can upload some assets if you want to use them later. The recommended size for a image is `1024x1024`, but the minimum size is `512x512`.
+You have to create your own [Discord Application](https://discord.com/developers/applications) and you can upload some assets if you want to use them later. The recommended size for a image is `1024x1024`, but the minimum size is `512x512`. Make sure to copy the `Application ID`.
 
 ## Installation
 
 ### Setup
 
-If you want to use the installer version you can [download](https://github.com/PryosCode/CustomDiscordRPC/releases) and directly start the `CustomDiscordRPC-Setup.exe`.
+If you want to use the installer version you can [download](https://github.com/PryosCode/CustomDiscordRPC/releases) and directly start the `CustomDiscordRPC.exe`. It will install it's own HotSpot JVM in the specified directory.
 
-### Binary
+### Java
 
-If you want to use the binary version you can [download](https://github.com/PryosCode/CustomDiscordRPC/releases) it and execute the `CustomDiscordRPC.exe`.
+If you want to use the java version you can [download](https://github.com/PryosCode/CustomDiscordRPC/releases) the archive and install manually [Java 11](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html). After that you can execute the archive with `java -jar CustomDiscordRPC.jar`.
 
-## Configuration
+## Configuration 
 
-If the application is running you can find a system tray and if you click on it you will find an option called `Config`.
-This will open the `config.yml` and you will have to set the `ClientID`.
-Otherwise you can press `Windows` + `R` and enter the command `notepad.exe %appdata%\PryosCode\CustomDiscordRPC\config.yml`.
-In this file you can configure every perspective of this application.
+If the application is running you can find a system tray at the bottom right of your screen and if you right click on it you will find an option called `Config`. This will open the config file in notepad.
+
+The config is located at `%appdata%/PryosCode/CustomDiscordRPC/config.yml`.
 
 ### Example
 
