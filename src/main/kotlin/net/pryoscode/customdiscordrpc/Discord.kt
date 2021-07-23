@@ -8,7 +8,7 @@ import club.minnced.discord.rpc.DiscordUser
 
 class Discord : DiscordEventHandlers.OnReady {
 
-    constructor(config: Config) {
+    constructor(config: Configuration) {
         val lib = DiscordRPC.INSTANCE
         val handlers = DiscordEventHandlers()
         handlers.ready = this

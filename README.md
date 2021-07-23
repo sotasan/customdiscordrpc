@@ -6,7 +6,7 @@
 </p>
 
 
-<h1><a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/img/logo.png"><img width="30px" height="auto" alt="Logo" src="https://github.com/PryosCode/CustomDiscordRPC/raw/master/img/logo.png"></a> CustomDiscordRPC</h1>
+<h1><a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/src/main/resources/logo.png"><img width="30px" height="auto" alt="Logo" src="https://github.com/PryosCode/CustomDiscordRPC/raw/master/src/main/resources/logo.png"></a> CustomDiscordRPC</h1>
 
 Customisable Discord Rich Presence Client in a JVM for Windows.
 
