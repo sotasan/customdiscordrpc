@@ -9,7 +9,7 @@ fun main() {
         System.exit(1)
     }
     Updater()
-    SysTray()
+    val tray = SysTray()
     val config = Configuration()
-    Discord(config)
+    Discord(config, tray)
 }

@@ -8,7 +8,10 @@ import club.minnced.discord.rpc.DiscordUser
 
 class Discord : DiscordEventHandlers.OnReady {
 
-    constructor(config: Configuration) {
+    val tray: SysTray
+
+    constructor(config: Configuration, tray: SysTray) {
+        this.tray = tray
         val lib = DiscordRPC.INSTANCE
         val handlers = DiscordEventHandlers()
         handlers.ready = this
@@ -17,10 +20,10 @@ class Discord : DiscordEventHandlers.OnReady {
         presence.startTimestamp = System.currentTimeMillis() / 1000
         presence.details = config.details()
         presence.state = config.state()
-        presence.largeImageKey = config.largeImage()
-        presence.largeImageText = config.largeImageTooltip()
-        presence.smallImageKey = config.smallImage()
-        presence.smallImageText = config.smallImageTooltip()
+        presence.largeImageKey = config.imagesLargeKey()
+        presence.largeImageText = config.imagesLargeText()
+        presence.smallImageKey = config.imagesSmallKey()
+        presence.smallImageText = config.imagesSmallText()
         lib.Discord_UpdatePresence(presence)
         Thread {
             while (!Thread.currentThread().isInterrupted()) {
@@ -31,7 +34,7 @@ class Discord : DiscordEventHandlers.OnReady {
     }
 
     override fun accept(user: DiscordUser) {
-        println("Ready!")
+        tray.display("Successfully started the RPC Client.")
     }
 
 }

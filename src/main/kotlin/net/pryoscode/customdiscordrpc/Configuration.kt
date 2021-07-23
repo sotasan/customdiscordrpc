@@ -9,10 +9,10 @@ class Configuration {
     fun clientId(): String { return get("ClientID") }
     fun details(): String { return get("Details") }
     fun state(): String { return get("State") }
-    fun largeImage(): String { return get("Images.LargeImage") }
-    fun largeImageTooltip(): String { return get("Images.LargeImageTooltip") }
-    fun smallImage(): String { return get("Images.SmallImage") }
-    fun smallImageTooltip(): String { return get("Images.SmallImageTooltip") }
+    fun imagesLargeKey(): String { return get("Images.LargeKey") }
+    fun imagesLargeText(): String { return get("Images.LargeText") }
+    fun imagesSmallKey(): String { return get("Images.SmallKey") }
+    fun imagesSmallText(): String { return get("Images.SmallText") }
 
     fun get(key: String): String {
         val config: Map<String, Any> = Yaml().load(read(getConfig()))

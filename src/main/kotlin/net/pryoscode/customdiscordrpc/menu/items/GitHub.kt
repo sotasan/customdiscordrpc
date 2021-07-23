@@ -8,8 +8,7 @@ import java.net.URL
 
 class GitHub : MenuItem, ActionListener {
 
-    constructor() {
-        setLabel("GitHub")
+    constructor() : super("GitHub") {
         addActionListener(this)
     }
 

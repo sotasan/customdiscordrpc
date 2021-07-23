@@ -5,7 +5,7 @@ import java.nio.file.Files
 import java.io.ByteArrayOutputStream
 import java.io.File
 import java.io.FileWriter
-import net.pryoscode.customdiscordrpc.Config
+import net.pryoscode.customdiscordrpc.Configuration
 
 fun read(file: File): String {
     return Files.readString(file.toPath(), StandardCharsets.UTF_8)
@@ -22,7 +22,7 @@ fun loadText(path: String): String {
 }
 
 fun loadBinary(path: String): ByteArray {
-    val stream = Config::class.java.classLoader.getResourceAsStream(path)
+    val stream = Configuration::class.java.classLoader.getResourceAsStream(path)
     val buffer = ByteArrayOutputStream()
     val data = ByteArray(stream.available())
     var i: Int

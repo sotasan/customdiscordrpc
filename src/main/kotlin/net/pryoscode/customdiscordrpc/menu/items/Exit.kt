@@ -6,8 +6,7 @@ import java.awt.event.ActionEvent
 
 class Exit : MenuItem, ActionListener {
 
-    constructor() {
-        setLabel("Exit")
+    constructor() : super("Exit") {
         addActionListener(this)
     }
 

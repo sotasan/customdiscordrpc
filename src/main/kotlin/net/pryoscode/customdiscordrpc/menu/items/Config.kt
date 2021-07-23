@@ -7,8 +7,7 @@ import net.pryoscode.customdiscordrpc.utils.getConfig
 
 class Config : MenuItem, ActionListener {
 
-    constructor() {
-        setLabel("Config")
+    constructor() : super("Config") {
         addActionListener(this)
     }
 

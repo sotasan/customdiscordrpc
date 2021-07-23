@@ -40,10 +40,10 @@ ClientID: 638034914398175233
 Details: Line 1
 State: Line 2
 Images:
-  LargeImage: discord-color
-  LargeImageTooltip: CustomDiscordRPC
-  SmallImage: discord-white
-  SmallImageTooltip: PryosCode
+  LargeKey: discord-color
+  LargeText: CustomDiscordRPC
+  SmallKey: discord-white
+  SmallText: PryosCode
 ```
 
 ## License
