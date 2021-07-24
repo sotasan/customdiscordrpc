@@ -2,6 +2,12 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
   kotlin("jvm") version "1.5.20"
+  id("org.openjfx.javafxplugin") version "0.0.10"
+}
+
+javafx {
+  version = JavaVersion.VERSION_11.toString()
+  modules("javafx.controls", "javafx.fxml")
 }
 
 group = "net.pryoscode"

@@ -10,7 +10,7 @@ class Discord : DiscordEventHandlers.OnReady {
 
     val tray: SysTray
 
-    constructor(config: Configuration, tray: SysTray) {
+    constructor(tray: SysTray) {
         this.tray = tray
         val lib = DiscordRPC.INSTANCE
         val handlers = DiscordEventHandlers()
@@ -18,12 +18,12 @@ class Discord : DiscordEventHandlers.OnReady {
         lib.Discord_Initialize("638034914398175233", handlers, true, "")
         val presence = DiscordRichPresence()
         presence.startTimestamp = System.currentTimeMillis() / 1000
-        presence.details = config.details()
-        presence.state = config.state()
-        presence.largeImageKey = config.imagesLargeKey()
-        presence.largeImageText = config.imagesLargeText()
-        presence.smallImageKey = config.imagesSmallKey()
-        presence.smallImageText = config.imagesSmallText()
+        presence.details = details()
+        presence.state = state()
+        presence.largeImageKey = imagesLargeKey()
+        presence.largeImageText = imagesLargeText()
+        presence.smallImageKey = imagesSmallKey()
+        presence.smallImageText = imagesSmallText()
         lib.Discord_UpdatePresence(presence)
         Thread {
             while (!Thread.currentThread().isInterrupted()) {

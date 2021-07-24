@@ -1,9 +1,9 @@
 @file:JvmName("Main")
 
 package net.pryoscode.customdiscordrpc
-
 import java.awt.SystemTray
 import javax.swing.JOptionPane
+import javafx.application.Platform
 
 fun main() {
     if (!SystemTray.isSupported() || !System.getProperty("os.name").startsWith("Windows")) {
@@ -11,7 +11,7 @@ fun main() {
         System.exit(1)
     }
     Updater()
+    Platform.startup {}
     val tray = SysTray()
-    val config = Configuration()
-    Discord(config, tray)
+    Discord(tray)
 }

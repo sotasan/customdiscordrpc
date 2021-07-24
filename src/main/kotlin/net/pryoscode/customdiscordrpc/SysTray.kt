@@ -8,7 +8,7 @@ import net.pryoscode.customdiscordrpc.utils.loadBinary
 
 class SysTray {
 
-    val icon: TrayIcon
+    private val icon: TrayIcon
 
     constructor() {
         val image = ImageIO.read(ByteArrayInputStream(loadBinary("logo.png")))
