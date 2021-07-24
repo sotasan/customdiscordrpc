@@ -24,13 +24,13 @@ jobs:
 
     - name: Gradle
       run: |
-        gradle fatJar
+        gradle jar
         echo GRADLE_VERSION=$(gradle -q properties | grep 'version:' | cut -d ' ' -f 2) >> $GITHUB_ENV
 
     - name: Release
       uses: softprops/action-gh-release@v1
       with:
-        files: build/libs
+        files: build/libs/*.jar
         tag_name: v${{ env.GRADLE_VERSION }}
         draft: true
       env:

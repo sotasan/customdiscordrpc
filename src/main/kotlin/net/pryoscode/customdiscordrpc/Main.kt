@@ -1,3 +1,5 @@
+@file:JvmName("Main")
+
 package net.pryoscode.customdiscordrpc
 
 import java.awt.SystemTray

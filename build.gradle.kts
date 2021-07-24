@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 plugins {
   kotlin("jvm") version "1.5.20"
 }
@@ -5,23 +7,22 @@ plugins {
 group = "net.pryoscode"
 version = "2.0.0"
 
-tasks {
-  register("fatJar", Jar::class.java) {
-    archiveName = project.name + ".jar"
-    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
-    manifest {
-      attributes["Implementation-Title"] = project.name
-      attributes["Implementation-Version"] = project.version
-      attributes["Main-Class"] = "net.pryoscode.customdiscordrpc.MainKt"
-    }
-    from(configurations.runtimeClasspath.get().map { if (it.isDirectory) it else zipTree(it) })
-    from(sourceSets.main.get().output)
-  }
+tasks.jar {
+  archiveFileName.set(project.name + ".jar")
+  duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+  manifest.attributes["Implementation-Title"] = project.name
+  manifest.attributes["Implementation-Version"] = project.version
+  manifest.attributes["Main-Class"] = project.group.toString() + "." + project.name.toLowerCase() + ".Main"
+  from(configurations.runtimeClasspath.get().map { if (it.isDirectory()) it else zipTree(it) })
+}
+
+tasks.withType<KotlinCompile> {
+  kotlinOptions.jvmTarget = JavaVersion.VERSION_11.toString()
 }
 
 repositories {
   mavenCentral()
-  maven { setUrl("https://jitpack.io") }
+  maven(url = "https://jitpack.io")
 }
 
 dependencies {
