@@ -24,7 +24,7 @@ jobs:
 
     - name: Gradle
       run: |
-        gradle jar
+        gradle build
         echo GRADLE_VERSION=$(gradle -q properties | grep 'version:' | cut -d ' ' -f 2) >> $GITHUB_ENV
 
     - name: Release

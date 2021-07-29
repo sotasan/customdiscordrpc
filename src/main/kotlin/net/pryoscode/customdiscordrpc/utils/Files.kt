@@ -43,3 +43,11 @@ fun getConfig(): File {
     }
     return config
 }
+
+fun getJar(): File {
+    return File(Discord::class.java.protectionDomain.codeSource.location.toURI())
+}
+
+fun getJVM(): File {
+    return File(System.getProperty("java.home") + File.separator + "bin" + File.separator + "java.exe")
+}
