@@ -8,7 +8,7 @@ import club.minnced.discord.rpc.DiscordUser
 
 class Discord : DiscordEventHandlers.OnReady {
 
-    val tray: SysTray
+    private val tray: SysTray
 
     constructor(tray: SysTray) {
         this.tray = tray
