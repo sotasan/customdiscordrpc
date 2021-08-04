@@ -43,12 +43,14 @@ class Updater : Application {
                             }
                         }
                         if (!url.isEmpty()) {
+                            val cache = getJar().parent + File.separator + getJar().nameWithoutExtension + ".cache"
+                            Runtime.getRuntime().exec(String.format("cmd /c attrib -H \"%s\"", cache))
+                            Thread.sleep(3000)
                             Platform.runLater { start(Stage()) }
-                            val jar = getJar()
+                            val out = BufferedOutputStream(FileOutputStream(cache), 1024)
+                            Runtime.getRuntime().exec(String.format("cmd /c attrib +H \"%s\"", cache))
                             val connection = URL(url).openConnection()
                             val stream = BufferedInputStream(connection.inputStream)
-                            val cache = File(jar.parent + File.separator + jar.nameWithoutExtension + ".cache")
-                            val out = BufferedOutputStream(FileOutputStream(cache), 1024)
                             val data = ByteArray(1024)
                             var downloaded = 0
                             var i: Int
@@ -59,7 +61,7 @@ class Updater : Application {
                             }
                             out.close()
                             stream.close()
-                            Runtime.getRuntime().exec(String.format("cmd.exe /c ping 127.0.0.1 /n 3 > nul && del \"%s\" && move \"%s\" \"%s\" && \"%s\" -jar \"%s\"", jar.path, cache.path, jar.path, getJVM().path, jar.path))
+                            Runtime.getRuntime().exec(String.format("cmd /c ping 127.0.0.1 /n 3 > nul && del \"%s\" && attrib -H \"%s\" && move \"%s\" \"%s\" && \"%s\" -jar \"%s\"", getJar().path, cache, cache, getJar().path, getJVM().path, getJar().path))
                             System.exit(0)
                         }
                     }
