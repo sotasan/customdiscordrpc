@@ -1,10 +1,8 @@
 <p align="center">
-    <a href="https://github.com/PryosCode/CustomDiscordRPC/releases"><img src="https://img.shields.io/github/downloads/PryosCode/CustomDiscordRPC/total?label=Downloads" alt="Downloads"></a>
+    <a href="https://github.com/PryosCode/CustomDiscordRPC/tags"><img alt="Version" src="https://img.shields.io/github/v/release/PryosCode/CustomDiscordRPC?label=Version"></a>
     <a href="https://github.com/PryosCode/CustomDiscordRPC/actions/workflows/build.yml"><img src="https://github.com/PryosCode/CustomDiscordRPC/actions/workflows/build.yml/badge.svg" alt="Build"></a>
     <a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/LICENSE"><img src="https://img.shields.io/github/license/PryosCode/CustomDiscordRPC?label=License" alt="License"></a>
-    <a href="https://discord.gg/bF2GRHq"><img src="https://discordapp.com/api/guilds/350302354639290379/widget.png" alt="Discord"></a>
 </p>
-
 
 <h1><a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/src/main/resources/logo.png"><img width="30px" height="auto" alt="Logo" src="https://github.com/PryosCode/CustomDiscordRPC/raw/master/src/main/resources/logo.png"></a> CustomDiscordRPC</h1>
 
