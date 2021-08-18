@@ -11,6 +11,7 @@ import java.io.BufferedOutputStream
 import kotlin.concurrent.timerTask
 import com.google.gson.Gson
 import com.google.gson.JsonArray
+import com.nativejavafx.taskbar.TaskbarProgressbar
 import net.pryoscode.customdiscordrpc.utils.getJar
 import net.pryoscode.customdiscordrpc.utils.getJVM
 import net.pryoscode.customdiscordrpc.utils.loadBinary
@@ -27,6 +28,7 @@ class Updater : Application {
 
     @FXML
     private lateinit var bar: ProgressBar
+    private lateinit var stage: Stage
 
     constructor() {
         Timer().scheduleAtFixedRate(timerTask {
@@ -56,7 +58,9 @@ class Updater : Application {
                             var i: Int
                             while (stream.read(data, 0, data.size).let { i = it; it != -1 }) {
                                 downloaded += i
-                                bar.progress = downloaded.toDouble() / connection.contentLength.toDouble()
+                                val progress = downloaded.toDouble() / connection.contentLength.toDouble()
+                                bar.progress = progress
+                                Platform.runLater { TaskbarProgressbar.showCustomProgress(stage, progress, TaskbarProgressbar.Type.NORMAL) }
                                 out.write(data, 0, i)
                             }
                             out.close()
@@ -71,6 +75,7 @@ class Updater : Application {
     }
 
     override fun start(stage: Stage) {
+        this.stage = stage
         stage.title = "CustomDiscordRPC"
         stage.setResizable(false)
         stage.icons.add(Image(ByteArrayInputStream(loadBinary("logo.png"))))

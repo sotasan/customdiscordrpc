@@ -7,7 +7,7 @@ import javax.swing.JOptionPane
 import javafx.application.Platform
 
 fun main() {
-    if (!SystemTray.isSupported() || !System.getProperty("os.name").startsWith("Windows")) {
+    if (!SystemTray.isSupported() || !System.getProperty("os.name").lowercase().startsWith("windows")) {
         JOptionPane.showMessageDialog(null, "Are you using Windows?", "CustomDiscordRPC", JOptionPane.ERROR_MESSAGE)
         System.exit(1)
     }

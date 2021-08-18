@@ -15,18 +15,23 @@ class Discord : DiscordEventHandlers.OnReady {
         val lib = DiscordRPC.INSTANCE
         val handlers = DiscordEventHandlers()
         handlers.ready = this
-        lib.Discord_Initialize("638034914398175233", handlers, true, "")
         val presence = DiscordRichPresence()
         presence.startTimestamp = System.currentTimeMillis() / 1000
-        presence.details = details()
-        presence.state = state()
-        presence.largeImageKey = imagesLargeKey()
-        presence.largeImageText = imagesLargeText()
-        presence.smallImageKey = imagesSmallKey()
-        presence.smallImageText = imagesSmallText()
-        lib.Discord_UpdatePresence(presence)
+        var clientId = ""
         Thread {
             while (!Thread.currentThread().isInterrupted()) {
+                if (!clientId().equals(clientId)) {
+                    clientId = clientId()
+                    lib.Discord_Shutdown()
+                    lib.Discord_Initialize(clientId, handlers, true, "")
+                }
+                presence.details = details()
+                presence.state = state()
+                presence.largeImageKey = imagesLargeKey()
+                presence.largeImageText = imagesLargeText()
+                presence.smallImageKey = imagesSmallKey()
+                presence.smallImageText = imagesSmallText()
+                lib.Discord_UpdatePresence(presence)
                 lib.Discord_RunCallbacks()
                 Thread.sleep(2000)
             }
@@ -34,7 +39,7 @@ class Discord : DiscordEventHandlers.OnReady {
     }
 
     override fun accept(user: DiscordUser) {
-        tray.display("Successfully started the RPC Client.")
+        tray.display("Successfully connected to Discord.")
     }
 
 }

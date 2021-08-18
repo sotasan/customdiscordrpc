@@ -2,7 +2,7 @@
 #define MyAppVersion "2.0.0"
 #define MyAppPublisher "PryosCode"
 #define MyAppURL "https://github.com/PryosCode/CustomDiscordRPC"
-#define MyAppExeName "CustomRichPresence.exe"
+#define MyAppExeName "CustomDiscordRPC.exe"
 
 [Setup]
 AppId={{0182D5E1-DA9D-48FF-BD84-FE84025F02EF}
@@ -16,7 +16,7 @@ DefaultDirName={autopf}\{#MyAppName}
 DisableProgramGroupPage=yes
 LicenseFile=LICENSE
 OutputDir=build
-OutputBaseFilename=CustomDiscordRPC-Setup
+OutputBaseFilename=CustomDiscordRPC
 SetupIconFile=img\logo.ico
 Compression=lzma
 SolidCompression=yes

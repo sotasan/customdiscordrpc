@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-  kotlin("jvm") version "1.5.20"
+  kotlin("jvm") version "1.5.21"
   id("org.openjfx.javafxplugin") version "0.0.10"
 }
 
@@ -36,4 +36,5 @@ dependencies {
   implementation("com.github.MinnDevelopment:discord-rpc-release:v3.3.0")
   implementation("org.yaml:snakeyaml:1.29")
   implementation("com.google.code.gson:gson:2.8.7")
+  implementation("com.github.Dansoftowner:FXTaskbarProgressBar:v11.4")
 }
