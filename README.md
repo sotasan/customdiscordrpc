@@ -4,9 +4,9 @@
     <a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/LICENSE"><img src="https://img.shields.io/github/license/PryosCode/CustomDiscordRPC?label=License" alt="License"></a>
 </p>
 
-<h1><a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/src/main/resources/logo.png"><img width="30px" height="auto" alt="Logo" src="https://github.com/PryosCode/CustomDiscordRPC/raw/master/src/main/resources/logo.png"></a> CustomDiscordRPC</h1>
+<h1><a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/assets/logo.png"><img width="30px" height="auto" alt="Logo" src="https://github.com/PryosCode/CustomDiscordRPC/raw/master/assets/logo.png"></a> CustomDiscordRPC</h1>
 
-Customizable Discord Rich Presence Client in a JVM for Windows.
+Customizable Discord Rich Presence Client for Windows.
 
 ## Getting Started
 
@@ -26,22 +26,13 @@ If you want to use the java version you can [download](https://github.com/PryosC
 
 If the application is running you can find a system tray at the bottom right of your screen and if you right click on it you will find an option called `Config`. This will open the config file in notepad.
 
-The config is located at `%appdata%/PryosCode/CustomDiscordRPC/config.yml`.
+The config is located at `%appdata%/PryosCode/CustomDiscordRPC/config.ini`.
 
 ### Example
 
-<a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/src/main/resources/config.yml"><img align="right" alt="Example" src="https://github.com/PryosCode/CustomDiscordRPC/raw/master/img/example.png"></a>
+<a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/assets/config.yml"><img align="right" alt="Example" src="https://github.com/PryosCode/CustomDiscordRPC/raw/assets/example.png"></a>
 
-```yaml
-ClientID: 638034914398175233
-Details: Line 1
-State: Line 2
-Images:
-  LargeKey: discord-color
-  LargeText: CustomDiscordRPC
-  SmallKey: discord-white
-  SmallText: PryosCode
-```
+_Coming Soon_
 
 ## License
 
