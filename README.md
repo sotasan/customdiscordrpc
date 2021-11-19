@@ -14,15 +14,13 @@ You have to create your own [Discord Application](https://discord.com/developers
 
 ## Installation
 
-### Setup
-
 You can just [download](https://github.com/PryosCode/CustomDiscordRPC/releases) the installer and directly execute `CustomDiscordRPC.exe`.
 
 ## Configuration 
 
 If the application is running you can find a system tray at the bottom right of your screen and if you right click on it you will find an option called `Config`. This will open the config file in notepad.
 
-The config is located at `%appdata%/PryosCode/CustomDiscordRPC/config.ini`.
+The config is located at `%appdata%\PryosCode\CustomDiscordRPC\config.ini`.
 
 ### Example
 
