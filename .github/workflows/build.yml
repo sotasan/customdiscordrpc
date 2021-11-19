@@ -14,23 +14,22 @@ jobs:
     runs-on: windows-latest
     steps:
 
-      - name: Checkout
+      - name: GitHub Checkout
         uses: actions/checkout@v2
 
-      - name: Setup
-        uses: actions/setup-java@v1
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
         with:
-          java-version: 11
+          dotnet-version: 6.0.x
 
-      - name: Gradle
+      - name: .NET Build
         run: |
-          gradle build
-          echo VERSION=$(gradle -q properties | findstr version: | cut -d ' ' -f 2) | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+          echo VERSION=$(cat assets/version.txt) | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+          dotnet publish
 
-      - name: Release
+      - name: GitHub Release
         uses: softprops/action-gh-release@v1
         with:
-          files: build/libs/*.jar
           tag_name: v${{ env.VERSION }}
           draft: true
         env:

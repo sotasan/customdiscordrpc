@@ -16,11 +16,7 @@ You have to create your own [Discord Application](https://discord.com/developers
 
 ### Setup
 
-If you want to use the installer version you can [download](https://github.com/PryosCode/CustomDiscordRPC/releases) and directly start the `CustomDiscordRPC.exe`. It will install it's own HotSpot JVM in the specified directory.
-
-### Java
-
-If you want to use the java version you can [download](https://github.com/PryosCode/CustomDiscordRPC/releases) the archive and install manually [Java 11](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html). After that you can execute the archive with `java -jar CustomDiscordRPC.jar`.
+You can just [download](https://github.com/PryosCode/CustomDiscordRPC/releases) the installer and directly execute `CustomDiscordRPC.exe`.
 
 ## Configuration 
 
@@ -30,7 +26,7 @@ The config is located at `%appdata%/PryosCode/CustomDiscordRPC/config.ini`.
 
 ### Example
 
-<a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/assets/config.yml"><img align="right" alt="Example" src="https://github.com/PryosCode/CustomDiscordRPC/raw/assets/example.png"></a>
+<a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/assets/config.ini"><img align="right" alt="Example" src="https://github.com/PryosCode/CustomDiscordRPC/raw/master/assets/example.png"></a>
 
 _Coming Soon_
 
