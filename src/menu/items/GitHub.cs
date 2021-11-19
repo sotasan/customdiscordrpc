@@ -5,7 +5,7 @@ using System.Windows.Forms;
 namespace CustomDiscordRPC
 {
 
-    class GitHub : ToolStripItem
+    class GitHub : ToolStripButton
     {
 
         public GitHub() : base("GitHub", null, OnClick) {}
