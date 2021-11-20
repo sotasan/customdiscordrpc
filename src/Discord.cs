@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using DiscordRPC;
 
 namespace CustomDiscordRPC
@@ -6,27 +8,34 @@ namespace CustomDiscordRPC
     class Discord
     {
 
-        public Discord()
+        public static void Start()
         {
-            var client = new DiscordRpcClient("638034914398175233");
+            var client = new DiscordRpcClient(Configuration.ClientID);
             client.Initialize();
-            client.SetPresence(new RichPresence()
+            var presence = new RichPresence();
+            if (!String.IsNullOrEmpty(Configuration.Details)) presence.Details = Configuration.Details;
+            if (!String.IsNullOrEmpty(Configuration.State)) presence.State = Configuration.State;
+            if (!String.IsNullOrEmpty(Configuration.LargeImageKey) ||
+                !String.IsNullOrEmpty(Configuration.LargeImageText) ||
+                !String.IsNullOrEmpty(Configuration.SmallImageKey) ||
+                !String.IsNullOrEmpty(Configuration.SmallImageText))
             {
-                Details = "Line 1",
-                State = "Line 2",
-                Assets = new Assets()
-                {
-                    LargeImageKey = "discord-color",
-                    LargeImageText = "CustomDiscordRPC",
-                    SmallImageKey = "discord-white",
-                    SmallImageText = "PryosCode"
-                },
-                Buttons = new Button[]
-                {
-                    new Button() { Label = "Website", Url = "https://pryoscode.net" },
-                    new Button() { Label = "Source Code", Url = "https://github.com/PryosCode/CustomDiscordRPC" }
-                }
-            });
+                var assets = new Assets();
+                assets.LargeImageKey = Configuration.LargeImageKey;
+                assets.LargeImageText = Configuration.LargeImageText;
+                assets.SmallImageKey = Configuration.SmallImageKey;
+                assets.SmallImageText = Configuration.SmallImageText;
+                presence.Assets = assets;
+            }
+            var buttons = new List<Button>();
+            if (!String.IsNullOrEmpty(Configuration.Button1Label) &&
+                !String.IsNullOrEmpty(Configuration.Button1Url))
+                    buttons.Add(new Button() { Label = Configuration.Button1Label, Url = Configuration.Button1Url });
+            if (!String.IsNullOrEmpty(Configuration.Button2Label) &&
+                !String.IsNullOrEmpty(Configuration.Button2Url))
+                buttons.Add(new Button() { Label = Configuration.Button2Label, Url = Configuration.Button2Url });
+            presence.Buttons = buttons.ToArray();
+            client.SetPresence(presence);
         }
 
     }

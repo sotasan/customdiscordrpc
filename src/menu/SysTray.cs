@@ -1,3 +1,5 @@
+using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace CustomDiscordRPC
@@ -6,17 +8,25 @@ namespace CustomDiscordRPC
     class SysTray
     {
 
-        public SysTray()
+        private static NotifyIcon Icon;
+
+        public static void Run()
         {
-            NotifyIcon icon = new NotifyIcon();
-            icon.Text = "CustomDiscordRPC";
-            icon.Icon = new System.Drawing.Icon("assets/logo.ico");
-            icon.ContextMenuStrip = new ContextMenuStrip();
-            icon.ContextMenuStrip.Items.Add(new AutoStart());
-            icon.ContextMenuStrip.Items.Add(new Config());
-            icon.ContextMenuStrip.Items.Add(new GitHub());
-            icon.ContextMenuStrip.Items.Add(new Exit());
-            icon.Visible = true;
+            Application.ApplicationExit += OnExit;
+            Icon = new NotifyIcon();
+            Icon.Text = "CustomDiscordRPC";
+            Icon.Icon = new Icon(Loader.Get("logo.ico"));
+            Icon.ContextMenuStrip = new ContextMenuStrip();
+            Icon.ContextMenuStrip.Items.Add(new AutoStart());
+            Icon.ContextMenuStrip.Items.Add(new Config());
+            Icon.ContextMenuStrip.Items.Add(new GitHub());
+            Icon.ContextMenuStrip.Items.Add(new Exit());
+            Icon.Visible = true;
+        }
+
+        private static void OnExit(object sender, EventArgs args)
+        {
+            Icon.Dispose();
         }
 
     }

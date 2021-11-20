@@ -12,7 +12,7 @@ namespace CustomDiscordRPC
 
         private static void OnClick(object sender, EventArgs args)
         {
-            Process.Start("notepad.exe", @"%appdata%\PryosCode\CustomDiscordRPC\config.ini");
+            Process.Start("notepad.exe", Configuration.ConfigFile);
         }
 
     }

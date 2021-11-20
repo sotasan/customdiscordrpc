@@ -8,8 +8,10 @@ namespace CustomDiscordRPC
 
         static void Main()
         {
-            new SysTray();
-            new Discord();
+            Updater.Check();
+            Configuration.Load();
+            SysTray.Run();
+            Discord.Start();
             Application.Run();
         }
 

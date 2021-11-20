@@ -22,11 +22,44 @@ If the application is running you can find a system tray at the bottom right of 
 
 The config is located at `%appdata%\PryosCode\CustomDiscordRPC\config.ini`.
 
-### Example
+### Examples
 
-<a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/assets/config.ini"><img align="right" alt="Example" src="https://github.com/PryosCode/CustomDiscordRPC/raw/master/assets/example.png"></a>
+<a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/assets/minimal.png"><img align="right" alt="Minimal" src="https://github.com/PryosCode/CustomDiscordRPC/raw/master/assets/minimal.png"></a>
 
-_Coming Soon_
+```ini
+[Config]
+ClientID=638034914398175233
+```
+
+<a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/assets/normal.png"><img align="right" alt="Normal" src="https://github.com/PryosCode/CustomDiscordRPC/raw/master/assets/normal.png"></a>
+
+```ini
+[Config]
+ClientID=638034914398175233
+Details=Line 1
+State=Line 2
+LargeImageKey=discord-color
+LargeImageText=CustomDiscordRPC
+SmallImageKey=discord-white
+SmallImageText=PryosCode
+```
+
+<a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/assets/extended.png"><img align="right" alt="Extended" src="https://github.com/PryosCode/CustomDiscordRPC/raw/master/assets/extended.png"></a>
+
+```ini
+[Config]
+ClientID=638034914398175233
+Details=Line 1
+State=Line 2
+LargeImageKey=discord-color
+LargeImageText=CustomDiscordRPC
+SmallImageKey=discord-white
+SmallImageText=PryosCode
+Button1Label=Website
+Button1Url=https://pryoscode.net
+Button2Label=GitHub
+Button2Url=https://github.com/PryosCode/CustomDiscordRPC
+```
 
 ## License
 
