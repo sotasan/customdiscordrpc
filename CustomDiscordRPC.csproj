@@ -5,11 +5,13 @@
     <DebugType>None</DebugType>
     <OutputType>WinExe</OutputType>
     <DebugSymbols>False</DebugSymbols>
+    <SelfContained>True</SelfContained>
     <Configuration>Release</Configuration>
-    <UseWindowsForms>true</UseWindowsForms>
+    <UseWindowsForms>True</UseWindowsForms>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <TargetFramework>net6.0-windows</TargetFramework>
     <ApplicationIcon>assets\logo.ico</ApplicationIcon>
-    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+    <RestorePackagesWithLockFile>True</RestorePackagesWithLockFile>
   </PropertyGroup>
 
   <ItemGroup>

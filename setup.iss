@@ -29,13 +29,7 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "bin\Release\net6.0-windows\publish\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
-Source: "bin\Release\net6.0-windows\publish\CustomDiscordRPC.deps.json"; DestDir: "{app}"; Flags: ignoreversion
-Source: "bin\Release\net6.0-windows\publish\CustomDiscordRPC.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "bin\Release\net6.0-windows\publish\CustomDiscordRPC.runtimeconfig.json"; DestDir: "{app}"; Flags: ignoreversion
-Source: "bin\Release\net6.0-windows\publish\DiscordRPC.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "bin\Release\net6.0-windows\publish\INIFileParser.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "bin\Release\net6.0-windows\publish\Newtonsoft.Json.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\Release\net6.0-windows\win-x64\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 [Icons]
 Name: "{autoprograms}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
