@@ -30,7 +30,7 @@ The config is located at `%appdata%\PryosCode\CustomDiscordRPC\config.ini`.
 ClientID=638034914398175233
 ```
 
-<br>
+<br><br>
 
 <a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/assets/normal.png"><img width="250px" align="right" alt="Normal" src="https://github.com/PryosCode/CustomDiscordRPC/raw/master/assets/normal.png"></a>
 
