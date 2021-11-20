@@ -4,7 +4,7 @@ using System.Windows.Forms;
 namespace CustomDiscordRPC
 {
 
-    class Exit : ToolStripButton
+    class Exit : ToolStripMenuItem
     {
 
         public Exit() : base("Exit", null, OnClick) {}

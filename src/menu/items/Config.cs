@@ -5,7 +5,7 @@ using System.Windows.Forms;
 namespace CustomDiscordRPC
 {
 
-    class Config : ToolStripButton
+    class Config : ToolStripMenuItem
     {
 
         public Config() : base("Config", null, OnClick) {}
