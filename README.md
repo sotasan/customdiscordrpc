@@ -24,17 +24,15 @@ The config is located at `%appdata%\PryosCode\CustomDiscordRPC\config.ini`.
 
 ## Examples
 
-<a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/assets/minimal.png"><img width="200px" align="right" alt="Minimal" src="https://github.com/PryosCode/CustomDiscordRPC/raw/master/assets/minimal.png"></a>
+<a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/assets/minimal.png"><img width="250px" align="right" alt="Minimal" src="https://github.com/PryosCode/CustomDiscordRPC/raw/master/assets/minimal.png"></a>
 
 ```ini
-[Config]
 ClientID=638034914398175233
 ```
 
-<a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/assets/normal.png"><img width="200px" align="right" alt="Normal" src="https://github.com/PryosCode/CustomDiscordRPC/raw/master/assets/normal.png"></a>
+<a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/assets/normal.png"><img width="250px" align="right" alt="Normal" src="https://github.com/PryosCode/CustomDiscordRPC/raw/master/assets/normal.png"></a>
 
 ```ini
-[Config]
 ClientID=638034914398175233
 Details=Line 1
 State=Line 2
@@ -44,10 +42,9 @@ SmallImageKey=discord-white
 SmallImageText=PryosCode
 ```
 
-<a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/assets/extended.png"><img width="200px" align="right" alt="Extended" src="https://github.com/PryosCode/CustomDiscordRPC/raw/master/assets/extended.png"></a>
+<a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/assets/extended.png"><img width="250px" align="right" alt="Extended" src="https://github.com/PryosCode/CustomDiscordRPC/raw/master/assets/extended.png"></a>
 
 ```ini
-[Config]
 ClientID=638034914398175233
 Details=Line 1
 State=Line 2

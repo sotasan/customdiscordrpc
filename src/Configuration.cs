@@ -33,20 +33,19 @@ namespace CustomDiscordRPC
             ConfigFile = Path.Combine(ConfigDirectory, "config.ini");
             if (!Directory.Exists(ConfigDirectory)) Directory.CreateDirectory(ConfigDirectory);
             if (!File.Exists(ConfigFile)) File.WriteAllText(ConfigFile, Loader.GetString("config.ini"));
-            var parser = new FileIniDataParser();
-            var data = parser.ReadFile(ConfigFile);
+            var data = new FileIniDataParser().ReadFile(ConfigFile);
 
-            ClientID = data["Config"]["ClientID"];
-            Details = data["Config"]["Details"];
-            State = data["Config"]["State"];
-            LargeImageKey = data["Config"]["LargeImageKey"];
-            LargeImageText = data["Config"]["LargeImageText"];
-            SmallImageKey = data["Config"]["SmallImageKey"];
-            SmallImageText = data["Config"]["SmallImageText"];
-            Button1Label = data["Config"]["Button1Label"];
-            Button1Url = data["Config"]["Button1Url"];
-            Button2Label = data["Config"]["Button2Label"];
-            Button2Url = data["Config"]["Button2Url"];
+            ClientID = data.GetKey("ClientID");
+            Details = data.GetKey("Details");
+            State = data.GetKey("State");
+            LargeImageKey = data.GetKey("LargeImageKey");
+            LargeImageText = data.GetKey("LargeImageText");
+            SmallImageKey = data.GetKey("SmallImageKey");
+            SmallImageText = data.GetKey("SmallImageText");
+            Button1Label = data.GetKey("Button1Label");
+            Button1Url = data.GetKey("Button1Url");
+            Button2Label = data.GetKey("Button2Label");
+            Button2Url = data.GetKey("Button2Url");
         }
 
     }
