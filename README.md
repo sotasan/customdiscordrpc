@@ -44,6 +44,8 @@ SmallImageKey=discord-white
 SmallImageText=PryosCode
 ```
 
+<br>
+
 <a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/assets/extended.png"><img width="250px" align="right" alt="Extended" src="https://github.com/PryosCode/CustomDiscordRPC/raw/master/assets/extended.png"></a>
 
 ```ini
