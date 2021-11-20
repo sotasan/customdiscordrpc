@@ -24,15 +24,17 @@ The config is located at `%appdata%\PryosCode\CustomDiscordRPC\config.ini`.
 
 ## Examples
 
-<a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/assets/minimal.png"><img width="250px" align="right" alt="Minimal" src="https://github.com/PryosCode/CustomDiscordRPC/raw/master/assets/minimal.png"></a>
+<table><tr><td>
 
 ```ini
 ClientID=638034914398175233
 ```
 
-<br><br>
+</td><td>
 
-<a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/assets/normal.png"><img width="250px" align="right" alt="Normal" src="https://github.com/PryosCode/CustomDiscordRPC/raw/master/assets/normal.png"></a>
+<a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/assets/minimal.png"><img width="250px" alt="Minimal" src="https://github.com/PryosCode/CustomDiscordRPC/raw/master/assets/minimal.png"></a>
+
+</td></tr><tr><td>
 
 ```ini
 ClientID=638034914398175233
@@ -44,9 +46,11 @@ SmallImageKey=discord-white
 SmallImageText=PryosCode
 ```
 
-<br>
+</td><td>
 
-<a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/assets/extended.png"><img width="250px" align="right" alt="Extended" src="https://github.com/PryosCode/CustomDiscordRPC/raw/master/assets/extended.png"></a>
+<a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/assets/normal.png"><img width="250px" alt="Normal" src="https://github.com/PryosCode/CustomDiscordRPC/raw/master/assets/normal.png"></a>
+
+</td></tr><tr><td>
 
 ```ini
 ClientID=638034914398175233
@@ -61,6 +65,12 @@ Button1Url=https://pryoscode.net
 Button2Label=GitHub
 Button2Url=https://github.com/PryosCode/CustomDiscordRPC
 ```
+
+</td><td>
+
+<a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/assets/extended.png"><img width="250px" alt="Extended" src="https://github.com/PryosCode/CustomDiscordRPC/raw/master/assets/extended.png"></a>
+
+</td></tr></table>
 
 ## License
 
