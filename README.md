@@ -22,7 +22,7 @@ If the application is running you can find a system tray at the bottom right of 
 
 The config is located at `%appdata%\PryosCode\CustomDiscordRPC\config.ini`.
 
-### Examples
+## Examples
 
 <a href="https://github.com/PryosCode/CustomDiscordRPC/blob/master/assets/minimal.png"><img width="200px" align="right" alt="Minimal" src="https://github.com/PryosCode/CustomDiscordRPC/raw/master/assets/minimal.png"></a>
 
