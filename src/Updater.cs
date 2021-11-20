@@ -6,6 +6,7 @@ namespace CustomDiscordRPC
 
         public static void Check()
         {
+            // Assembly.GetEntryAssembly().GetName().Version
         }
 
     }

@@ -1,23 +1,25 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <Version>3.0.0</Version>
+    <DebugType>None</DebugType>
     <OutputType>WinExe</OutputType>
+    <DebugSymbols>False</DebugSymbols>
     <Configuration>Release</Configuration>
     <UseWindowsForms>true</UseWindowsForms>
     <TargetFramework>net6.0-windows</TargetFramework>
+    <ApplicationIcon>assets\logo.ico</ApplicationIcon>
     <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="assets/config.ini" />
-    <EmbeddedResource Include="assets/logo.ico" />
-    <EmbeddedResource Include="assets/version.txt" />
+    <EmbeddedResource Include="assets\config.ini" />
+    <EmbeddedResource Include="assets\logo.ico" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="ini-parser" Version="2.5.2" />
     <PackageReference Include="DiscordRichPresence" Version="1.0.175" />
-    <PackageReference Include="Microsoft.Win32.Registry" Version="6.0.0-preview.5.21301.5" />
   </ItemGroup>
 
 </Project>
