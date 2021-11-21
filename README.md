@@ -10,7 +10,7 @@ Customizable Discord Rich Presence Client for Windows.
 
 ## Getting Started
 
-You have to create your own [Discord Application](https://discord.com/developers/applications) and you can upload some assets if you want to use them later. The recommended size for a image is `1024x1024`, but the minimum size is `512x512`. Make sure to copy the `Application ID`.
+You have to create your own [Discord Application](https://discord.com/developers/applications) and you can upload some assets if you want to use them later. The recommended size for an image is `1024x1024`, but the minimum size is `512x512`. Make sure to copy the `Application ID`.
 
 ## Installation
 
@@ -18,7 +18,7 @@ You can just [download](https://github.com/PryosCode/CustomDiscordRPC/releases) 
 
 ## Configuration 
 
-If the application is running you can find a system tray at the bottom right of your screen and if you right click on it you will find an option called `Config`. This will open the config file in notepad.
+If the application is running you can find a notification icon in the system tray at the bottom right of your screen and if you right click on it you will find an option called `Config`. This will open the configuration file in notepad.
 
 The config is located at `%appdata%\PryosCode\CustomDiscordRPC\config.ini`.
 
