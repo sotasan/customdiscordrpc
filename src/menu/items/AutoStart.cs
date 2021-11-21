@@ -19,7 +19,7 @@ namespace CustomDiscordRPC
         {
             var item = (ToolStripMenuItem) sender;
             var key = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Run", true);
-            if (String.IsNullOrEmpty(key.GetValue("CustomDiscordRPC", "").ToString()))
+            if (key.GetValue("CustomDiscordRPC", "").ToString().Equals(Application.ExecutablePath))
             {
                 key.SetValue("CustomDiscordRPC", Application.ExecutablePath);
                 item.Checked = true;
