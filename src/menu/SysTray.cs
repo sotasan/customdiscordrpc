@@ -29,6 +29,11 @@ namespace CustomDiscordRPC
             Icon.Dispose();
         }
 
+        public static void Send(string message)
+        {
+            Icon.ShowBalloonTip(0, "CustomDiscordRPC", message, ToolTipIcon.Info);
+        }
+
     }
 
 }

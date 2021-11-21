@@ -8,10 +8,17 @@ namespace CustomDiscordRPC
     class Discord
     {
 
-        public static void Start()
+        private static DiscordRpcClient Client;
+
+        public static void Update()
         {
-            var client = new DiscordRpcClient(Configuration.ClientID);
-            client.Initialize();
+            if (Client == null || !Client.ApplicationID.Equals(Configuration.ClientID))
+            {
+                if (Client != null) Client.Dispose();
+                Client = new DiscordRpcClient(Configuration.ClientID);
+                Client.Initialize();
+            }
+
             var presence = new RichPresence();
             if (!String.IsNullOrEmpty(Configuration.Details)) presence.Details = Configuration.Details;
             if (!String.IsNullOrEmpty(Configuration.State)) presence.State = Configuration.State;
@@ -35,7 +42,7 @@ namespace CustomDiscordRPC
                 !String.IsNullOrEmpty(Configuration.Button2Url))
                 buttons.Add(new Button() { Label = Configuration.Button2Label, Url = Configuration.Button2Url });
             presence.Buttons = buttons.ToArray();
-            client.SetPresence(presence);
+            Client.SetPresence(presence);
         }
 
     }

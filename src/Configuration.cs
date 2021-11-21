@@ -27,10 +27,18 @@ namespace CustomDiscordRPC
         public static string Button2Label;
         public static string Button2Url;
 
-        public static void Load()
+        public static void Init()
         {
             ConfigDirectory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "PryosCode", "CustomDiscordRPC");
             ConfigFile = Path.Combine(ConfigDirectory, "config.ini");
+            Load();
+            var watcher = new FileSystemWatcher(ConfigDirectory);
+            watcher.Changed += OnChanged;
+            watcher.EnableRaisingEvents = true;
+        }
+
+        private static void Load()
+        {
             if (!Directory.Exists(ConfigDirectory)) Directory.CreateDirectory(ConfigDirectory);
             if (!File.Exists(ConfigFile)) File.WriteAllText(ConfigFile, Loader.GetString("config.ini"));
             var data = new FileIniDataParser().ReadFile(ConfigFile);
@@ -46,6 +54,13 @@ namespace CustomDiscordRPC
             Button1Url = data.GetKey("Button1Url");
             Button2Label = data.GetKey("Button2Label");
             Button2Url = data.GetKey("Button2Url");
+        }
+
+        public static void OnChanged(object sender, EventArgs args)
+        {
+            Load();
+            Discord.Update();
+            SysTray.Send("The config file was reloaded.");
         }
 
     }

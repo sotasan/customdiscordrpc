@@ -9,9 +9,9 @@ namespace CustomDiscordRPC
         static void Main()
         {
             Updater.Check();
-            Configuration.Load();
+            Configuration.Init();
             SysTray.Run();
-            Discord.Start();
+            Discord.Update();
             Application.Run();
         }
 
