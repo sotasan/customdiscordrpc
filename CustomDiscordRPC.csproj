@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Version>3.0.1</Version>
+    <Version>3.1.0</Version>
     <DebugType>None</DebugType>
     <OutputType>WinExe</OutputType>
     <DebugSymbols>False</DebugSymbols>

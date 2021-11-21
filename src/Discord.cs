@@ -22,6 +22,8 @@ namespace CustomDiscordRPC
             var presence = new RichPresence();
             if (!String.IsNullOrEmpty(Configuration.Details)) presence.Details = Configuration.Details;
             if (!String.IsNullOrEmpty(Configuration.State)) presence.State = Configuration.State;
+            Boolean.TryParse(Configuration.Timestamp, out bool timestamp);
+            if (timestamp) presence.Timestamps = new Timestamps() { Start = DateTime.UtcNow };
             if (!String.IsNullOrEmpty(Configuration.LargeImageKey) ||
                 !String.IsNullOrEmpty(Configuration.LargeImageText) ||
                 !String.IsNullOrEmpty(Configuration.SmallImageKey) ||

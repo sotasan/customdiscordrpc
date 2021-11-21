@@ -27,7 +27,7 @@ namespace CustomDiscordRPC
                 var bytes = await client.GetByteArrayAsync(url);
                 var file = Path.Combine(Path.GetTempPath(), Guid.NewGuid().ToString() + ".exe");
                 File.WriteAllBytes(file, bytes);
-                Process.Start(file);
+                Process.Start(file, "/VERYSILENT");
                 Application.Exit();
             }
         }

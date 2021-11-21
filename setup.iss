@@ -1,5 +1,5 @@
 #define MyAppName "CustomDiscordRPC"
-#define MyAppVersion "3.0.1"
+#define MyAppVersion "3.1.0"
 #define MyAppPublisher "PryosCode"
 #define MyAppURL "https://github.com/PryosCode/CustomDiscordRPC"
 #define MyAppExeName "CustomDiscordRPC.exe"
@@ -8,12 +8,14 @@
 AppId={{E519EEC6-80F9-4D69-B253-423F9421ECAE}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
+AppVerName={#MyAppName} v{#MyAppVersion}
 AppPublisher={#MyAppPublisher}
 AppPublisherURL={#MyAppURL}
 AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
 DefaultDirName={autopf}\{#MyAppName}
 DisableProgramGroupPage=yes
+PrivilegesRequired=lowest
 LicenseFile=assets\LICENSE.rtf
 OutputDir=dist
 OutputBaseFilename=CustomDiscordRPC
@@ -36,4 +38,4 @@ Name: "{autoprograms}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
 Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon
 
 [Run]
-Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
+Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall

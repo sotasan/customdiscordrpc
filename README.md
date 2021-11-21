@@ -56,6 +56,7 @@ SmallImageText=PryosCode
 ClientID=638034914398175233
 Details=Line 1
 State=Line 2
+Timestamp=true
 LargeImageKey=discord-color
 LargeImageText=CustomDiscordRPC
 SmallImageKey=discord-white

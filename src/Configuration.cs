@@ -14,6 +14,7 @@ namespace CustomDiscordRPC
         public static string ClientID;
         public static string Details;
         public static string State;
+        public static string Timestamp;
 
         public static string LargeImageKey;
         public static string LargeImageText;
@@ -46,6 +47,7 @@ namespace CustomDiscordRPC
             ClientID = data.GetKey("ClientID");
             Details = data.GetKey("Details");
             State = data.GetKey("State");
+            Timestamp = data.GetKey("Timestamp");
             LargeImageKey = data.GetKey("LargeImageKey");
             LargeImageText = data.GetKey("LargeImageText");
             SmallImageKey = data.GetKey("SmallImageKey");

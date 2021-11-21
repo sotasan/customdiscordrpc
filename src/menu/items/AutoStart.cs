@@ -11,7 +11,7 @@ namespace CustomDiscordRPC
         public AutoStart() : base("Auto Start", null, OnClick)
         {
             var key = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Run", true);
-            Checked = !String.IsNullOrEmpty(key.GetValue("CustomDiscordRPC", "").ToString());
+            Checked = key.GetValue("CustomDiscordRPC", "").ToString().Equals(Application.ExecutablePath);
             key.Close();
         }
 
