@@ -33,6 +33,5 @@ jobs:
         with:
           files: dist/CustomDiscordRPC.exe
           tag_name: v${{ env.VERSION }}
-          draft: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
