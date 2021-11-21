@@ -1,5 +1,5 @@
 #define MyAppName "CustomDiscordRPC"
-#define MyAppVersion "3.0.0"
+#define MyAppVersion "3.0.1"
 #define MyAppPublisher "PryosCode"
 #define MyAppURL "https://github.com/PryosCode/CustomDiscordRPC"
 #define MyAppExeName "CustomDiscordRPC.exe"

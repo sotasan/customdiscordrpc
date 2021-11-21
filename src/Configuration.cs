@@ -60,7 +60,7 @@ namespace CustomDiscordRPC
         {
             Load();
             Discord.Update();
-            SysTray.Send("The config file was reloaded.");
+            SysTray.Send("The config was reloaded.");
         }
 
     }
