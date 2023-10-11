@@ -1,7 +1,6 @@
 ﻿namespace CustomDiscordRPC.Menu;
 
 using Microsoft.Win32;
-using System.Reflection;
 
 public sealed class AutoStartMenuItem : MenuItem {
 
@@ -11,7 +10,7 @@ public sealed class AutoStartMenuItem : MenuItem {
     public override string Name => "Auto Start";
 
     public AutoStartMenuItem() {
-        _path = Assembly.GetEntryAssembly()?.Location;
+        _path = Environment.ProcessPath;
         Check();
     }
 
