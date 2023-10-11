@@ -8,8 +8,4 @@ public static class AssemblyExtension {
         return assembly.GetManifestResourceStream($"CustomDiscordRPC.Assets.{name}")!;
     }
 
-    public static string GetDirectory(this Assembly assembly) {
-        return Path.GetDirectoryName(assembly.Location)!;
-    }
-
 }

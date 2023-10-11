@@ -22,7 +22,7 @@ jobs:
               uses: softprops/action-gh-release@v1
               with:
                 files: CustomDiscordRPC/bin/Publish/*.exe
-                tag_name: v3.2.0
+                tag_name: 3.2.1
                 fail_on_unmatched_files: true
               env:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

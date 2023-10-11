@@ -1,6 +1,5 @@
 ﻿namespace CustomDiscordRPC;
 
-using CustomDiscordRPC.Extensions;
 using IniParser;
 using IniParser.Model;
 using System.Reflection;
@@ -32,7 +31,7 @@ public sealed class Config {
     }
 
     public static string GetPath() {
-        return Path.Combine(Assembly.GetExecutingAssembly().GetDirectory(), $"{nameof(Config)}.ini");
+        return Path.Combine(AppContext.BaseDirectory, $"{nameof(Config)}.ini");
     }
 
 }
