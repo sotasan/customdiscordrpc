@@ -1,4 +1,4 @@
-.vscode
+.vs
 bin
-dist
 obj
+*.user

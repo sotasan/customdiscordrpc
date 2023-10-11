@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomDiscordRPC", "CustomDiscordRPC\CustomDiscordRPC.csproj", "{B05B01AF-DAA0-4455-84D5-0F9BE568BFE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projektmappenelemente", "Projektmappenelemente", "{29AB0AF8-0E73-42DF-A72D-5E52518888EE}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B05B01AF-DAA0-4455-84D5-0F9BE568BFE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B05B01AF-DAA0-4455-84D5-0F9BE568BFE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B05B01AF-DAA0-4455-84D5-0F9BE568BFE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B05B01AF-DAA0-4455-84D5-0F9BE568BFE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B8BFBE2-52D5-4E8E-A803-20F18B0F02EE}
+	EndGlobalSection
+EndGlobal
