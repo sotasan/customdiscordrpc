@@ -16,7 +16,7 @@ jobs:
                 dotnet-version: 8.0.x
 
             - name: Build
-              run: dotnet publish
+              run: dotnet publish /p:PublishProfile=Publish
 
             - name: Release
               uses: softprops/action-gh-release@v1
