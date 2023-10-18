@@ -1,7 +1,7 @@
 ﻿<p align="center">
     <a href="https://github.com/sotasan/customdiscordrpc/tags"><img alt="Version" src="https://img.shields.io/github/v/release/sotasan/customdiscordrpc?label=Version"></a>
     <a href="https://github.com/sotasan/customdiscordrpc/actions/workflows/build.yml"><img src="https://github.com/sotasan/customdiscordrpc/actions/workflows/build.yml/badge.svg" alt="Build"></a>
-    <a href="LICENSE"><img src="https://img.shields.io/github/license/sotasan/customdiscordrpc?label=License" alt="License"></a>
+    <a href="LICENSE.txt"><img src="https://img.shields.io/github/license/sotasan/customdiscordrpc?label=License" alt="License"></a>
 </p>
 
 <h1><a href="CustomDiscordRPC/Assets/Icon.png"><img width="30px" height="auto" alt="Icon" src="CustomDiscordRPC/Assets/Icon.png"></a> CustomDiscordRPC</h1>
@@ -77,4 +77,4 @@ Button2Url=https://github.com/sotasan/customdiscordrpc
 
 ## License
 
-[BSD 3-Clause](LICENSE)
+[MIT](LICENSE.txt)
